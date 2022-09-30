@@ -1,0 +1,55 @@
+Exercice 1
+-Faire un clone du depôt git distant
+	git clone git@github.com:github/choosealicense.com.git
+- Quelles sont les branches disponibles ?
+	Il y a  gh-pages (spdx-license-templates n'est plus disponible)
+
+
+
+Exercice 2
+-Quel est le numéro de la dernière pull request ?
+	le numéro de la dernière pull request est #1028
+
+
+-Combien de commit contient la pull request #550 ?
+	Il y a 2 commit
+
+
+-Quel est le numéro, combien de commit, et quel est l’auteur dans la pull request du commit de merge 8061f2f ?
+	L'auteur de la pull request est Mike Linksvayer <mlinksva@github.com> et son numéro est #549 
+	Iy a 2 commit
+
+
+
+Exercice 3
+-Quelle est la commande pour revenir à la version précédente sur le fichier “index.html” ?
+	Git revert 67a6eb306652b3a5d96bda983121befc13e6086
+	(où 67a6eb306652b3a5d96bda983121befc13e6086 est le numéro de commit de index.html)
+
+-Un plugin javascript a été supprimé dans le commit b30306e502b99aabab256a5d2f68e8d50ba5072a, quel est le nom du plugin supprimé ?
+	Le plugin est "autocomplete plugin"
+
+-Quelle est la commande pour voir les fichiers modifiés dans ce commit ?
+	git diff b30306e502b99aabab256a5d2f68e8d50ba5072a
+
+-Quelle est la commande pour récupérer le plugin supprimé ?
+	git reset <commit>
+
+
+
+Exercice 4
+-Le dossier “_licenses” contient les licences qui sont affichées sur le site. Vous allez ajouter une license à votre nom (par exemple “theau-debureau-1.0.txt”) et commiter le résultat.
+	Il faut faut créer un fichier Hugo_Stawiarski.txt dans le dossier licence;
+	Puis faire :  git add _licences/Hugo_Stawiarski.txt
+		      git commit -m "Mon fichier"
+		      git push
+
+-Comment vérifier si vous êtes à jour avec le dépôt distant ?
+	Il faut faire git status
+
+	
+-Envoyer votre dernier commit
+	envoyé avec la commande git push
+
+
+
